@@ -4,4 +4,4 @@
 	branch = main-ros2
 [submodule "multidomain_sim_binaries"]
 	path = multidomain_sim_binaries
-	url = ssh://git@158.130.118.32:2224/odexter/multidomain_sim_binaries.git
+	url = http://158.130.118.32:8929/odexter/multidomain_sim_binaries.git

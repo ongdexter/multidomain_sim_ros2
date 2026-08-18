@@ -33,12 +33,7 @@ cd multidomain_sim_ros2
 ```
 
 `--recursive` pulls both submodules: `ROS-TCP-Endpoint` from GitHub, and
-`multidomain_sim_binaries` from `158.130.118.32`. That second host is on the lab network,
-so you need SSH access to it (and the VPN if you are off-site), and it checks out roughly
-11 GB.
-
-If you already cloned without `--recursive`, fetch them with
-`git submodule update --init --recursive`.
+`multidomain_sim_binaries` from the lab GitLab at `158.130.118.32:8929`. Expect roughly 11 GB.
 
 Then build and source the workspace:
 
