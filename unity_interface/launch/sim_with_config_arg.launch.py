@@ -20,7 +20,7 @@ def generate_launch_description():
         raise RuntimeError("Could not determine workspace path!")
 
     sim_path = os.path.join(
-        ws_path, 'src', 'aerial_sim_ros2', 'aerial_sim_binaries', 'aerial_sim.x86_64'
+        ws_path, 'src', 'multidomain_sim_ros2', 'multidomain_sim_binaries', 'multidomain_sim.x86_64'
     )
     print(f"Using simulation binary at: {sim_path}")
 

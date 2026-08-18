@@ -1,4 +1,4 @@
-environment: PolyCity
+environment: PolyCityScene
 
 # Multi-robot configuration.
 # Each entry spawns a robot instance cloned from the original scene template.
@@ -6,7 +6,7 @@ environment: PolyCity
 # 'type' is 'uav' or 'ugv'.
 # 'startPosition' is in ROS coordinates (ENU, Z-up). Required for each robot.
 robots:
-  - name: uav1
+  - name: uav
     type: uav
     startPosition:
       x: 0.0
@@ -16,7 +16,7 @@ robots:
       roll: 0.0
       pitch: 0.0
       yaw: 0.0
-  - name: ugv1
+  - name: ugv
     type: ugv
     startPosition:
       x: 0.0
@@ -30,7 +30,7 @@ robots:
 sceneStartPoses:
   - scene: PolyCityScene
     robots:
-      uav1:
+      uav:
         startPosition:
           x: 0.0
           y: 0.0
@@ -39,7 +39,7 @@ sceneStartPoses:
           roll: 0.0
           pitch: 0.0
           yaw: 0.0
-      ugv1:
+      ugv:
         startPosition:
           x: 0.0
           y: 0.0
@@ -51,44 +51,45 @@ sceneStartPoses:
 
   - scene: ForestScene
     robots:
-      uav1:
+      uav:
         startPosition:
           x: -15.0
           y: -50.0
-          z: 120.0
+          z: 60.0
         startOrientation:
           roll: 0.0
           pitch: 0.0
           yaw: 0.0
-      ugv1:
+      ugv:
         startPosition:
           x: -15.0
           y: -50.0
-          z: 70.0
+          z: 0.0
         startOrientation:
           roll: 0.0
           pitch: 0.0
           yaw: 0.0
 
   - scene: FloodedGroundsScene
-    uav:
-      startPosition:
-        x: 375.0
-        y: -490.0
-        z: 50.0
-      startOrientation:
-        roll: 0.0
-        pitch: 0.0
-        yaw: 0.0
-    ugv:
-      startPosition:
-        x: 375.0
-        y: -490.0
-        z: 6.0
-      startOrientation:
-        roll: 0.0
-        pitch: 0.0
-        yaw: 0.0
+    robots:
+      uav:
+        startPosition:
+          x: 375.0
+          y: -490.0
+          z: 50.0
+        startOrientation:
+          roll: 0.0
+          pitch: 0.0
+          yaw: 0.0
+      ugv:
+        startPosition:
+          x: 375.0
+          y: -490.0
+          z: 6.0
+        startOrientation:
+          roll: 0.0
+          pitch: 0.0
+          yaw: 0.0
 
 # Custom GLB-based environments.
 # Add new environments here — just specify scene name, GLB paths, and transforms.
@@ -119,7 +120,7 @@ customEnvironments:
         y: 180.0
         z: 0.0
     robots:
-      uav1:
+      uav:
         startPosition:
           x: -30.0
           y: -35.0
@@ -128,7 +129,7 @@ customEnvironments:
           roll: 0.0
           pitch: 0.0
           yaw: 0.0
-      ugv1:
+      ugv:
         startPosition:
           x: -30.0
           y: -35.0
@@ -160,7 +161,7 @@ customEnvironments:
         y: 180.0
         z: 0.0
     robots:
-      uav1:
+      uav:
         startPosition:
           x: -70.0
           y: 30.0
@@ -169,7 +170,7 @@ customEnvironments:
           roll: 0.0
           pitch: 0.0
           yaw: 0.0
-      ugv1:
+      ugv:
         startPosition:
           x: -70.0
           y: 30.0
@@ -201,7 +202,7 @@ customEnvironments:
         y: 180.0
         z: 0.0
     robots:
-      uav1:
+      uav:
         startPosition:
           x: -165.0
           y: 80.0
@@ -210,7 +211,7 @@ customEnvironments:
           roll: 0.0
           pitch: 0.0
           yaw: 0.0
-      ugv1:
+      ugv:
         startPosition:
           x: -165.0
           y: 80.0
