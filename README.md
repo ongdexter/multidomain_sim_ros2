@@ -28,8 +28,7 @@ cloning:
 ```bash
 git lfs install
 cd ~/ros2_sim_ws/src
-git clone --recursive https://github.com/ongdexter/multidomain_sim_ros2.git multidomain_sim_ros2
-cd multidomain_sim_ros2
+git clone --recursive https://github.com/ongdexter/multidomain_sim_ros2.git
 ```
 
 `--recursive` pulls both submodules: `ROS-TCP-Endpoint` from GitHub, and
