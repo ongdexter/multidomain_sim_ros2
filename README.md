@@ -210,3 +210,18 @@ Its `center`, `radius`, and `angular_speed` parameters control the trajectory.
 - **Simulator fails to start** — you may need to run `chmod +x multidomain_sim_binaries/multidomain_sim.x86_64`.
 - **Custom environment loads empty** — the `glb` path is resolved relative to the
   player's `Assets/` folder; use an absolute path if the mesh lives elsewhere.
+
+## Citation
+If you find this useful, please consider citing:
+```bibtex
+@article{11513994,
+  author={Tao, Yuezhan and Ong, Dexter and Cladera, Fernando and Hughes, Jason and Taylor, Camillo J. and Chaudhari, Pratik and Kumar, Vijay},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={HALO: Language-Conditioned Overhead Monocular Aerial Exploration and Navigation}, 
+  year={2026},
+  volume={11},
+  number={7},
+  pages={8204-8211},
+  doi={10.1109/LRA.2026.3692052}
+}
+```
