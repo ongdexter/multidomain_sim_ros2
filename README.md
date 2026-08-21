@@ -214,7 +214,7 @@ Its `center`, `radius`, and `angular_speed` parameters control the trajectory.
 ## Citation
 If you find this useful, please consider citing:
 ```bibtex
-@article{11513994,
+@article{tao2026halo,
   author={Tao, Yuezhan and Ong, Dexter and Cladera, Fernando and Hughes, Jason and Taylor, Camillo J. and Chaudhari, Pratik and Kumar, Vijay},
   journal={IEEE Robotics and Automation Letters}, 
   title={HALO: Language-Conditioned Overhead Monocular Aerial Exploration and Navigation}, 
