@@ -3,7 +3,7 @@ environment: PolyCityScene
 # Multi-robot configuration.
 # Each entry spawns a robot instance cloned from the original scene template.
 # 'name' sets the GameObject name and ROS topic prefix (e.g. /uav1/pose_cmd).
-# 'type' is 'uav' or 'ugv'.
+# 'type' is 'uav', 'lowalt_uav' or 'ugv'.
 # 'startPosition' is in ROS coordinates (ENU, Z-up). Required for each robot.
 robots:
   - name: uav
@@ -26,6 +26,16 @@ robots:
       roll: 0.0
       pitch: 0.0
       yaw: 0.0
+  # - name: lowalt_uav
+  #   type: lowalt_uav
+  #   startPosition:
+  #     x: 0.0
+  #     y: 0.0
+  #     z: 2.0
+  #   startOrientation:
+  #     roll: 0.0
+  #     pitch: 0.0
+  #     yaw: 0.0
 
 sceneStartPoses:
   - scene: PolyCityScene
@@ -44,6 +54,15 @@ sceneStartPoses:
           x: 0.0
           y: 0.0
           z: 1.0
+        startOrientation:
+          roll: 0.0
+          pitch: 0.0
+          yaw: 0.0
+      lowalt_uav:
+        startPosition:
+          x: 0.0
+          y: 0.0
+          z: 3.0
         startOrientation:
           roll: 0.0
           pitch: 0.0
@@ -69,6 +88,15 @@ sceneStartPoses:
           roll: 0.0
           pitch: 0.0
           yaw: 0.0
+      lowalt_uav:
+        startPosition:
+          x: -15.0
+          y: -50.0
+          z: 2.0
+        startOrientation:
+          roll: 0.0
+          pitch: 0.0
+          yaw: 0.0
 
   - scene: FloodedGroundsScene
     robots:
@@ -86,6 +114,15 @@ sceneStartPoses:
           x: 375.0
           y: -490.0
           z: 6.0
+        startOrientation:
+          roll: 0.0
+          pitch: 0.0
+          yaw: 0.0
+      lowalt_uav:
+        startPosition:
+          x: 375.0
+          y: -490.0
+          z: 8.0
         startOrientation:
           roll: 0.0
           pitch: 0.0
@@ -138,6 +175,15 @@ customEnvironments:
           roll: 0.0
           pitch: 0.0
           yaw: 0.0
+      lowalt_uav:
+        startPosition:
+          x: -30.0
+          y: -35.0
+          z: 3.0
+        startOrientation:
+          roll: 0.0
+          pitch: 0.0
+          yaw: 0.0
 
   - scene: DiningHallScene
     renderMesh:
@@ -179,6 +225,15 @@ customEnvironments:
           roll: 0.0
           pitch: 0.0
           yaw: 0.0
+      lowalt_uav:
+        startPosition:
+          x: -70.0
+          y: 30.0
+          z: 3.0
+        startOrientation:
+          roll: 0.0
+          pitch: 0.0
+          yaw: 0.0
 
   - scene: Range15Scene
     renderMesh:
@@ -216,6 +271,15 @@ customEnvironments:
           x: -165.0
           y: 80.0
           z: 0.0
+        startOrientation:
+          roll: 0.0
+          pitch: 0.0
+          yaw: 0.0
+      lowalt_uav:
+        startPosition:
+          x: -165.0
+          y: 80.0
+          z: 2.0
         startOrientation:
           roll: 0.0
           pitch: 0.0
