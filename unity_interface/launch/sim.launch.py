@@ -19,6 +19,7 @@ def generate_launch_description():
     sim_path = os.path.join(ws_path, 'src', 'multidomain_sim_ros2', 'multidomain_sim_binaries', 'multidomain_sim.x86_64')
     print(f"Using simulation binary at: {sim_path}")
     config_path = os.path.join(ws_path, 'src', 'multidomain_sim_ros2', 'unity_interface', 'config', 'unity_sim_config.yaml')
+    print(f"Using simulation config at: {config_path}")
 
     return LaunchDescription([
         ExecuteProcess(

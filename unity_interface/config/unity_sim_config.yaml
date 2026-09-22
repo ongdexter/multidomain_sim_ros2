@@ -105,35 +105,55 @@ sceneStartPoses:
           pitch: 0.0
           yaw: 0.0
 
-  - scene: FloodedGroundsScene
+  - scene: SuburbanScene
     robots:
       uav:
         startPosition:
-          x: 375.0
-          y: -490.0
-          z: 50.0
+          x: 10.0
+          y: -15.0
+          z: 40.0
         startOrientation:
           roll: 0.0
           pitch: 0.0
           yaw: 0.0
       ugv:
         startPosition:
-          x: 375.0
-          y: -490.0
-          z: 6.0
+          x: 10.0
+          y: -15.0
+          z: 0.8
         startOrientation:
           roll: 0.0
           pitch: 0.0
           yaw: 0.0
       lowalt_uav:
         startPosition:
-          x: 375.0
-          y: -490.0
-          z: 8.0
+          x: 10.0
+          y: -15.0
+          z: 2.8
         startOrientation:
           roll: 0.0
           pitch: 0.0
           yaw: 0.0
+
+  - scene: FloodedGroundsScene
+    uav:
+      startPosition:
+        x: 375.0
+        y: -490.0
+        z: 50.0
+      startOrientation:
+        roll: 0.0
+        pitch: 0.0
+        yaw: 0.0
+    ugv:
+      startPosition:
+        x: 375.0
+        y: -490.0
+        z: 6.0
+      startOrientation:
+        roll: 0.0
+        pitch: 0.0
+        yaw: 0.0
 
 # Custom GLB-based environments.
 # Add new environments here — just specify scene name, GLB paths, and transforms.
