@@ -1,4 +1,11 @@
-environment: PolyCityScene
+# Default scene to load on startup
+environment: PolyCityScene # PolyCityScene, ForestScene, SuburbanScene, FloodedGroundsScene, PennovationScene, DiningHallScene, Range15Scene
+
+# Folder to save each robot's ViewCamera/MainCamera recordings (mp4) to.
+# Leave empty to disable recording entirely (default). If set, a subfolder is
+# created per robot and videos are written there as they record. Relative
+# paths are resolved next to the built executable. ffmpeg required.
+videoSaveFolder: ""
 
 # Multi-robot configuration.
 # Each entry spawns a robot instance cloned from the original scene template.
