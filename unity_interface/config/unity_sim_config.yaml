@@ -1,5 +1,5 @@
 # Default scene to load on startup
-environment: PolyCityScene # PolyCityScene, ForestScene, SuburbanScene, FloodedGroundsScene, PennovationScene, DiningHallScene, Range15Scene
+environment: SuburbanScene # PolyCityScene, ForestScene, SuburbanScene, FloodedGroundsScene, PennovationScene, DiningHallScene, Range15Scene
 
 # Folder to save each robot's ViewCamera/MainCamera recordings (mp4) to.
 # Leave empty to disable recording entirely (default). If set, a subfolder is
@@ -126,6 +126,36 @@ sceneStartPoses:
           pitch: 0.0
           yaw: 0.0
       lowalt_uav:
+        startPosition:
+          x: 10.0
+          y: -15.0
+          z: 2.8
+        startOrientation:
+          roll: 0.0
+          pitch: 0.0
+          yaw: 0.0
+
+  - scene: SuburbanGrassScene
+    robots:
+      uav1:
+        startPosition:
+          x: 10.0
+          y: -15.0
+          z: 40.0
+        startOrientation:
+          roll: 0.0
+          pitch: 0.0
+          yaw: 0.0
+      ugv1:
+        startPosition:
+          x: 10.0
+          y: -15.0
+          z: 0.8
+        startOrientation:
+          roll: 0.0
+          pitch: 0.0
+          yaw: 0.0
+      lowalt_uav1:
         startPosition:
           x: 10.0
           y: -15.0
